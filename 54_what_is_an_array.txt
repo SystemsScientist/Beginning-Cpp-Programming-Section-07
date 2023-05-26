@@ -1,0 +1,58 @@
+
+Section 07: What is an Array
+----------------------------------------------------------------------------
+
+What is an array? 
+
+	- Compound data type or data structure
+
+		+ Collection of elements
+
+	- All elements are of the same type
+
+	- Each element can be accessed directly
+
+
+Why do we need arrays?
+
+	int test_score_1 {0};
+	int test_score_2 {0};
+	int test_score_3 {0};
+	int test_score_4 {0};
+	int test_score_5 {0};
+	...
+	int test_score_100 {0};
+
+Note: this is a typical use case
+
+
+Characteristics
+
+	- Fixed size
+
+	- Elements are all the same type
+
+	- Stored contiguously in memory
+
+	- Individual elements can be accessed by
+	  their position or index
+
+	
+	- First element is an index 0
+	
+	- Last element is at index size - 1
+
+	
+	- No checking to see if you are out of 
+	  bounds
+
+
+	- Always initialize arrays
+
+	- Very efficient
+
+	- Iteration (looping) is often used to 
+	  process
+
+
+
