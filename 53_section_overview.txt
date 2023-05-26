@@ -1,0 +1,28 @@
+
+Section 07: Section Overview
+--------------------------------------------------------------------------------
+
+Arrays and Vectors
+
+	- Arrays
+
+		+ What are they
+
+		+ Why we use arrays
+
+		+ Declaration and initilialization
+
+		+ Accessing array elements
+
+	- Multi-dimensional arrays
+
+	- Vectors
+
+		+ What they are 
+
+		+ Advantages vs arrays
+
+		+ Declaration and initialization
+
+
+
