@@ -1,0 +1,28 @@
+
+Section 07: Multidimensional Arrays
+----------------------------------------------------------------------
+
+Declaring Multi-dimensional Arrays
+
+	Element_Type array_name [dim1_size][dim2_size]
+
+	int movie_rating[3][4]
+
+
+Multi-dimensional Arrays
+
+	const int rows{3};
+	const int cols{4};
+
+	int movie_rating[rows][cols];
+
+
+Accessing Array Elements in Multi-dimensional Arrays
+
+	cin >> movie_rating[1][2];
+	cout << movie_rating[1][2];
+
+	
+
+
+
