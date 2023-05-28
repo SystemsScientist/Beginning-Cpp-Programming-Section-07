@@ -1,0 +1,90 @@
+
+Section 07: Accessing and Modifying Vector Elements
+-----------------------------------------------------------------------------
+
+Accessing vector elements - array syntax
+
+	vector_name [element_index];
+
+	test_scores [1]
+
+
+	vector <int> test_scores {100, 95, 99, 87, 88};
+
+	cout << "First score at index 0: " << test_scores[0] << endl;
+	cout << "Second score at index 1: " << test_scores[1] << endl;
+	cout << "Third score at index 2: " << test_scores[2] << endl;
+	cout << "Fourth score at index 3: " << test_scores[3] << endl;
+	cout << "Fifth score at index 4: " << test_scores[4] << endl;
+
+
+Accessing vector elements - vector syntax I
+
+	vector_name.at(element_index);
+
+	test_scores.at(1)
+
+
+	vector <int> test_scores {100, 95, 99, 87, 88};
+
+	cout << "First score at index 0: " << test_scores.at(0) << endl;
+	cout << "Second score at index 1: " << test_scores.at(1) << endl;
+	cout << "Third score at index 2: " << test_scores.at(2) << endl;
+	cout << "Fourth score at index 3: " << test_scores.at(3) << endl;
+	cout << "Fifth score at index 4: " << test_scores.at(4) << endl;
+
+
+Accessing vector elements - vector syntax II
+
+	vector_name.at(element_index);
+
+	
+	vector <int> test_scores {100, 95, 99, 87, 88};
+
+	cin >> test_scores.at(0);
+	cin >> test_scores.at(1);
+	cin >> test_scores.at(2);
+	cin >> test_scores.at(3);
+	cin >> test_scores.at(4);
+
+	test_scores.at(0) = 90;		// assignment statement
+
+
+So, when do they grow as needed? 
+
+	vector_name.push_back(element);
+
+	
+	vector <int> test_scores {100, 95, 99};	// size is 3
+
+	test_scores.push_back(80);	// 100, 95, 99, 80
+	test_scores.push_back(90);	// 100, 95, 99, 80, 90
+
+	Vector will automatically allocate the required space!
+
+
+What happens if you are out of bounds?
+
+	- Arrays never do bounds checking
+
+	- Many vector methods provide bounds checking
+
+	- An exception and error message is generated
+
+	
+	vector <int> test_scores {100, 95};
+	
+	cin >> test_scores.at(5);
+
+	terminated called after throwing an instance of 
+	'std::out_of_range' what(): vector::_M_range_check: __n
+	(which is 5) >= this -> size() (which is 2)
+
+	This application has requested the Runtime to terminate
+	it in an unusual way. 
+
+	Please contact the application's support team for mroe
+	information.
+
+
+
