@@ -1,0 +1,97 @@
+
+Section 07: Declaring and Initializing Vectors
+---------------------------------------------------------------------------------
+
+Vectors
+
+	- Suppose we want to store test scores for my school
+
+	- I have no way of knowing how many students will 
+	  register next year
+
+	- Options:
+
+		+ Pick a size that you are not likely to
+		  exceed and use static arrays
+
+		+ Use a dynamic array such as a vector
+
+
+What is a vector?
+
+	- Container in the C++ Standard Template Library
+
+	- An array that can grow and shrink in size at
+	  execution time
+
+	- Provides similar semantics and syntax as arrays
+
+	- Very efficient
+
+	- Can provide bounds checking
+
+	- Can use lots of cool functions like sort, reverse,
+	  find, and more
+
+	- Note: a vector is an object
+
+
+Declaring a vector I
+
+	#include <iostream>
+	#include <vector>
+
+	using namespace std;
+
+	vector <char> vowels;		// is a vector of vowels
+	vector <int> test_scores; 	// is a vector of integers
+
+
+Declaring a vector II
+
+	vector <char> vowels (5);
+
+	vector <int> test_scores (10);
+
+
+Initializing a vector
+
+	vector <char> vowels {'a', 'e', 'i', 'o', 'u'};
+
+	vector <int> test_scores {100, 98, 89, 85, 93};
+
+	vector <double> hi_temperatures (365.0, 80.0);
+
+
+Characteristics
+
+	- Dyanmic size
+
+	- Elements are all the same type
+
+	- Stored contiguously in memory
+
+	- Individual elements can be accessed by their
+	  position or index
+
+	
+	- First element is at index 0
+	
+	- Last element is at index size - 1
+
+	
+	- [] - no checking to see you are out of 
+	  bounds
+
+	- Provides many useful functions that do bounds
+	  checking
+
+	
+	- Elements initialized to zero
+
+	- Very efficient
+
+	- Iteration (looping) is often used to process
+
+
+
